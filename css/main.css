@@ -1,0 +1,97 @@
+@import url("header.css");
+@import url("hero.css");
+@import url("brand.css");
+@import url("projects.css");
+@import url("faq.css");
+@import url("footer.css");
+
+@font-face {
+    font-family: 'Bunch';
+    src: url('../assets/fonts/Bunch-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bunch';
+    src: url('../assets/fonts/Bunch-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bunch';
+    src: url('../assets/fonts/Bunch-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bunch';
+    src: url('../assets/fonts/Bunch-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bunch';
+    src: url('../assets/fonts/Bunch-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bunch';
+    src: url('../assets/fonts/Bunch-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bunch';
+    src: url('../assets/fonts/Bunch-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bunch';
+    src: url('../assets/fonts/Bunch-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+:root {
+    /* Colors */
+    --primary-color: #022D33;
+    --secondary-color: #FE5000;
+    --background: #F5F5F5;
+    --background-dark: #111111;
+    --text-dark: #23272E;
+    --text-grey: #7F7F7F;
+    --text-body: #526077;
+
+    /* Spacing */
+    --padding-desktop: 20px;
+    --padding-mobile: 16px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* font-size: var(--font-size-base); */
+}
+
+body {
+    font-family: 'Bunch', sans-serif;
+    background-color: var(--background);
+    color: var(--primary-color);
+    padding: var(--padding-desktop);
+}

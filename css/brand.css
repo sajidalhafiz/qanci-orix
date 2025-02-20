@@ -1,0 +1,33 @@
+
+/* Brand logo slide */
+.logo-slider {
+    margin: 100px 0;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.logo-slider .swiper {
+    padding-top: 60px;
+}
+
+.logo-slider {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.logo-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    /* Ensures it does not shrink */
+}
+
+.logo-swiper img {
+    max-width: 150px;
+    height: auto;
+    transition: filter 0.3s ease-in-out;
+}
+
+

@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+    body {
+
+        padding: 0;
+    }
+
+    main {
+        padding: var(--padding-mobile);
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+
+
+
+}

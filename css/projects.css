@@ -1,0 +1,82 @@
+
+/* Projects Style */
+.projects .swiper {
+    padding: 80px 40px !important;
+    background-color: var(--primary-color);
+    border-radius: 40px;
+    position: relative;
+}
+
+.swiper h2 {
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+    line-height: 1;
+}
+
+.swiper-wrapper {
+    padding-top: 60px;
+    display: flex;
+}
+
+/* Styling for both buttons */
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 100px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 16px 24px;
+    transition: background-color 0.3s ease;
+}
+
+/* Customizing the default Swiper button icons */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+
+    display: none;
+}
+
+.swiper-button-prev {
+    background-image: url("../assets/images/Polygon-left.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8px;
+}
+
+/* Custom next button icon */
+.swiper-button-next {
+    background-image: url("/assets/images/Polygon-right.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8px;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: var(--secondary-color)
+}
+
+.swiper-slide {
+    color: white;
+    width: 300px;
+}
+
+.swiper-slide>img {
+    border-radius: 40px;
+    width: 100%;
+}
+
+.slide-caption {
+    display: flex;
+    align-items: end;
+    gap: 12px;
+    padding-top: 24px;
+}
+
+.slide-caption p {
+    font-size: 20px;
+    font-weight: 600;
+}

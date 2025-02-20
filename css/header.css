@@ -1,0 +1,231 @@
+/* Navigation Bar */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px var(--padding-desktop);
+    background: transparent;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo img {
+    width: 100px;
+    /* Adjust based on your logo size */
+}
+
+/* Navigation Menu */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    background-color: white;
+    padding: 20px 54px;
+    border-radius: 80px;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: var(--text-grey);
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s;
+    position: relative;
+    padding-left: 10px;
+}
+
+.nav-menu li a:hover {
+    color: var(--secondary-color);
+}
+
+.nav-menu li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 60%;
+    width: 6px;
+    height: 6px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    transform: translateY(-50%) scale(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-menu li a:hover::before {
+    transform: translateY(-50%) scale(1);
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.primary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    border: 1px solid #0C0F10;
+    padding: 16px 40px;
+    background: #022D33;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    text-decoration: none;
+
+    /* Apply both box shadows */
+    box-shadow:
+        0px 1px 1px 3px #193D42 inset,
+        0px 1px 2px 0px #022D3380;
+}
+
+/* Small Circle Dot */
+.primary-button::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    /* Same as text color */
+    border-radius: 60%;
+    position: absolute;
+    right: 14px;
+}
+
+/* Hover effect */
+.primary-button:hover {
+    background: #033c44;
+    box-shadow:
+        0px 1px 1px 4px #1d4d55 inset,
+        0px 2px 4px 0px #022D33cc;
+}
+
+/* Active effect */
+.primary-button:active {
+    background: #021e22;
+    box-shadow:
+        0px 1px 1px 5px #193D42 inset,
+        0px 1px 2px 0px #022D3399;
+}
+
+
+/* Mobile Menu */
+.nav-toggle {
+    display: none;
+    align-items: end;
+    gap: 12px;
+    padding: 16px 24px;
+    border-radius: 80px;
+    background: white;
+    color: var(--text-grey);
+    cursor: pointer;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-grey);
+    transition: 0.3s;
+}
+
+.hamburger span {
+    width: 16px;
+    height: 2px;
+    background: var(--text-grey);
+    margin: 2px 0;
+    border-radius: 4px;
+}
+
+.navbar.mobile-active .logo,
+.navbar.mobile-active .nav-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        background: rgba(255, 255, 255, 0.5); 
+    }
+    .navbar.mobile-active {
+        padding: 0;
+    }
+
+    .nav-menu, .cta {
+        display: none;
+    }
+
+    .mobile-menu.active {
+        width: 100dvw;
+        height: 100dvh;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        background-color: var(--primary-color);
+    }
+
+    .mobile-menu-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobile-menu-top a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .mobile-menu-top .close {
+        background-color: #DFDFDF1A;
+        padding: 14px 21px;
+        display: flex;
+        gap: 8px;
+        align-items: end;
+        border-radius: 50px;
+        color: white;
+    }
+
+    .mobile-nav li{
+        padding: 22px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        list-style: none;
+    }
+
+    .mobile-nav li a{
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 38px;
+        color: white;
+    }
+
+    .cta .primary-button {
+        display: none;
+    }
+
+    .mobile-menu.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+}
