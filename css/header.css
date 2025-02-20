@@ -1,11 +1,4 @@
 /* Navigation Bar */
-header {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000; 
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -161,9 +154,6 @@ header {
 }
 
 @media (max-width: 768px) {
-    header {
-        background: rgba(255, 255, 255, 0.5); 
-    }
     .navbar.mobile-active {
         padding: 0;
     }

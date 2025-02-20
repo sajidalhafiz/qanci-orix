@@ -54,22 +54,20 @@ const updateWindowSize = () => {
     windowWidth = window.outerWidth;
     console.log(windowWidth)
     if (windowWidth < 768) {
-        slideCount = 1.5;
+        slideCount = 1;
     } else {
-
         slideCount = 3;
     }
 
     const swiper = new Swiper('.swiper', {
-
+        // width: 800,
         direction: 'horizontal',
         loop: true,
         slidesPerView: slideCount,
-        centeredSlides: true,
         spaceBetween: 8,
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.slide-nav-next',
+            prevEl: '.slide-nav-prev',
         },
 
     });
