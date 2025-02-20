@@ -1,9 +1,32 @@
-
 /* Brand logo slide */
 .logo-slider {
     margin: 100px 0;
     color: var(--primary-color);
     text-align: center;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.logo-slider::before,
+.logo-slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;  
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.logo-slider::before {
+  left: 0;
+  background: linear-gradient(to right, var(--background), transparent);
+}
+
+.logo-slider::after {
+  right: 0;
+  background: linear-gradient(to left, var(--background), transparent);
 }
 
 .logo-slider .swiper {
@@ -21,7 +44,6 @@
     justify-content: center;
     align-items: center;
     width: auto;
-    /* Ensures it does not shrink */
 }
 
 .logo-swiper img {
@@ -29,5 +51,3 @@
     height: auto;
     transition: filter 0.3s ease-in-out;
 }
-
-

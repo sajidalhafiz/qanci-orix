@@ -192,6 +192,7 @@
         align-items: end;
         border-radius: 50px;
         color: white;
+        cursor: pointer;
     }
 
     .mobile-nav li{

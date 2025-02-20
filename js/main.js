@@ -33,16 +33,17 @@ document.addEventListener("DOMContentLoaded", function () {
 // Brand slider
 document.addEventListener("DOMContentLoaded", function () {
     new Swiper(".logo-swiper", {
-        slidesPerView: "auto",
-        loop: true,
-        speed: 2000,
-        autoplay: {
-            delay: 0,
-            disableOnInteraction: true,
-        },
-        freeMode: true,
+      slidesPerView: "auto",
+      loop: true,
+      speed: 4000, 
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      freeMode: true,
     });
-});
+  });
+  
 
 // swiper project slider
 
