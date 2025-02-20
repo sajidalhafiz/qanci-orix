@@ -113,6 +113,15 @@
         text-align: center;
     }
 
+    .swiper-slide img{
+        width: 300px;
+        height: auto;
+    }
+    
+    .slide-caption img{
+        width: fit-content;
+    }
+
     .slide-navigation {
         grid-column: 1;
         grid-row: 3;
