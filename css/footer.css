@@ -26,7 +26,7 @@ footer {
 
 .footer-cta h2 {
     font-size: 70px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .primary-button.inverted {
@@ -59,11 +59,13 @@ footer {
 .footer-column ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    gap: 40px;
 }
 
 .footer-column ul li {
     display: inline;
-    margin-right: 40px;
+    /* margin-right: 40px; */
 }
 
 .footer-column ul li a {
@@ -127,7 +129,7 @@ a {
 @media (max-width: 768px) {
     .footer-cta h2 {
         font-size: 52px;
-        font-weight: 600;
+        padding: 20px;
     }
 
     .footer-links {
@@ -136,12 +138,15 @@ a {
         justify-content: space-between;
         align-items: start;
         gap: 36px;
-        padding: 20px;
+        padding: 44px 20px;
     }
 
 
     .footer-column {
         flex: 1;
+    }
+    .footer-column ul {
+        flex-direction: column;
     }
 
     .footer-column p {
@@ -152,12 +157,16 @@ a {
         white-space: normal;
     }
 
+    .footer-column ul li a {
+        display: block;
+        /* margin-bottom: 34px; */
+    }
     .footer-column p a {
-        display: inline-block; 
-        max-width: 100%;
-        word-break: break-all;
-        overflow-wrap: anywhere;
-        white-space: normal;
+        /* display: inline-block;  */
+        /* max-width: 100%; */
+        /* word-break: break-all; */
+        /* overflow-wrap: anywhere; */
+        /* white-space: normal; */
     }
 
     .footer-column:nth-child(3) {

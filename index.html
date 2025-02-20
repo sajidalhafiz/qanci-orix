@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
-<body>
+<body id="home">
 
     <header>
         <nav class="navbar">
@@ -74,7 +74,7 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero">
+        <section id="about-us" class="hero">
             <h1>Development</h1>
             <div class="hero-vectors">
                 <img src="assets/icons/code-bracket-vector.png" alt="code-bracket-vector">
@@ -85,7 +85,7 @@
                 <img id="hero-image" src="assets/images/hero.png" alt="Person">
                 <img id="hero-image-mobile" src="assets/images/hero-mobile.png" alt="Person">
             </div>
-            <div class="hero-cards">
+            <div id="services" class="hero-cards">
                 <div class="contact-card">
                     <div class="contact-card-top">
                         <p>We bring light, joy to the <br> old, mundane or otherwise <br> overlooked.</p>
@@ -138,7 +138,7 @@
 
 
         <!-- Projects Section -->
-        <section class="projects">
+        <section id="works" class="projects">
             <div class="swiper">
                 <div class="project-title">
                     <h2>Our recent <br> works</h2>
@@ -313,7 +313,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="footer-section">
         <div class="footer-cta">
             <h2>Have any project idea! <br> Let’s chat with us</h2>
             <button class="primary-button inverted">Get in touch</button>
@@ -323,10 +323,10 @@
             <div class="footer-column">
                 <h4>Quick links</h4>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Works</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#about-us">About us</a></li>
+                    <li><a href="#services">Services</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -336,18 +336,18 @@
             <div class="footer-column">
                 <h4>Follow us</h4>
                 <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#footer-section">Facebook</a></li>
+                    <li><a href="#footer-section">Instagram</a></li>
+                    <li><a href="#footer-section">Twitter</a></li>
+                    <li><a href="#footer-section">LinkedIn</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="footer-bottom">
             <p>Copyright © qanci, Inc</p>
-            <p><a href="#">Privacy Policy</a></p>
-            <p><a href="#">Website Terms</a></p>
+            <p><a href="#footer-section" style="padding-right: 150px;">Privacy Policy</a></p>
+            <p><a href="#footer-section">Website Terms</a></p>
         </div>
     </footer>
 

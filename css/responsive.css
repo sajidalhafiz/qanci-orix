@@ -5,14 +5,11 @@
     }
 
     main {
-        padding: var(--padding-mobile);
+        margin: 20px;
     }
 
-    .projects {
-        grid-template-columns: 1fr;
+    footer{
+        margin: 20px;
     }
-
-
-
 
 }
